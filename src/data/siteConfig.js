@@ -21,8 +21,8 @@ export const siteConfig = {
   contact: {
     phoneDisplay: "[PHONE NUMBER]",
     phoneHref: "tel:+910000000000",
-    email: "[EMAIL ADDRESS]",
-    address: "[BUSINESS ADDRESS]",
+    email: "aromaherbexp@gmail.com",
+    address: "AROMA INDUSTRIES  NO 22, 2ND MAIN ROAD, DATTATRAYA ROAD BSK 3RD STAGE, HOSAKEREHALLI BANGALORE-560085, INDIA",
     workingHours: [
       { days: "Monday – Friday", hours: "9:00 AM – 6:00 PM" },
       { days: "Saturday", hours: "10:00 AM – 4:00 PM" },
