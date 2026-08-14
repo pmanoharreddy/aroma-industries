@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  --font-display: "Fraunces", ui-serif, Georgia, "Times New Roman", serif;
+
+  /* Warm "cognac / leather" brand palette */
+  --color-brand-50: #fbf7f3;
+  --color-brand-100: #f5ebe0;
+  --color-brand-200: #e9d4bf;
+  --color-brand-300: #dbb797;
+  --color-brand-400: #cb9570;
+  --color-brand-500: #bd7c52;
+  --color-brand-600: #ad6742;
+  --color-brand-700: #905237;
+  --color-brand-800: #744430;
+  --color-brand-900: #5f3929;
+  --color-brand-950: #331d14;
+
+  --color-cream: #faf7f2;
+  --color-ink: #16120f;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #44403c; /* stone-700 */
+    font-family: var(--font-sans);
+  }
+
+  ::selection {
+    background-color: #e9d4bf;
+    color: #331d14;
+  }
+}
+
+/* Scroll-reveal animation (unlayered so it always applies). */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
