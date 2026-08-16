@@ -6,13 +6,13 @@ export default function Logo({ tone = "dark", className }) {
   return (
     <Link
       to="/"
-      className={cn("group inline-flex items-center gap-2.5", className)}
+      className={cn("group inline-flex items-center gap-3", className)}
       aria-label={`${siteConfig.name} — home`}
     >
       <img
         src="/images/branding/brand_logo.png"
         alt="Aroma Industries logo"
-        className="h-11 w-11 object-contain transition-transform duration-300 group-hover:-rotate-3"
+        className="h-20 w-20 object-contain transition-transform duration-300 group-hover:-rotate-3"
       />
 
       <span
