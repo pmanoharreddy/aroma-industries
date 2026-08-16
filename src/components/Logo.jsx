@@ -12,7 +12,7 @@ export default function Logo({ tone = "dark", className }) {
       <img
         src="/images/branding/brand_logo.png"
         alt="Aroma Industries logo"
-        className="h-20 w-20 object-contain transition-transform duration-300 group-hover:-rotate-3"
+        className="h-10 w-10 object-contain transition-transform duration-300 group-hover:-rotate-3"
       />
 
       <span
